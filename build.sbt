@@ -10,3 +10,4 @@ lazy val root = (project in file(".")).
     name := "scala-minefield",
     libraryDependencies += scalaTest % Test
   )
+
