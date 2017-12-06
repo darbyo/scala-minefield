@@ -1,0 +1,39 @@
+[0m[[0minfo[0m] [0m[32mMinefieldSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Minefield object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should do stuff[0m[0m
+[0m[[0minfo[0m] [0m[32mtoCharList[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a list of chars[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw exception if strings contains any char that is not . or *[0m[0m
+[0m[[0minfo[0m] [0m[32mcreateFieldItems[0m[0m
+[0m[[0minfo[0m] [0m[32m  should without mines[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return a field item when one is entered[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return two field items when two are entered[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return field item List for 1 row with correct coordinates[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return field item List for 2 rows with correct coordinates[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return field item List for 3 rows with correct coordinates[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return field item List for 4 rows with correct coordinates[0m[0m
+[0m[[0minfo[0m] [0m[32m  should with mines[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine false when no mine is entered[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered as second item[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered in second row[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered in third row[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered in fourth row[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when return with isMine true when * is entered in 3,4 row[0m[0m
+[0m[[0minfo[0m] [0m[32mgetFieldsToIncrement[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for one row location 1,1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for one row location 1,2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for one row 1,3[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for one row location 1,4[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for two rows location 2,1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for two rows location 2,3[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for three rows location 3,1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for four rows location 4,2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return correct fields to increment for four rows where bomb is in the middle[0m[0m
+[0m[[0minfo[0m] [0m[32mincrementMinefield[0m[0m
+[0m[[0minfo[0m] [0m[31m- should increment fieldItems for one rowz *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  List(FieldItem(Coordinate(1,3),false,1), FieldItem(Coordinate(1,1),false,1), FieldItem(Coordinate(1,2),true,0), FieldItem(Coordinate(1,4),false,0)) was not equal to "1*10" (MinefieldSpec.scala:257)[0m[0m
+[0m[[0minfo[0m] [0m[31m- should increment fieldItems for one row mine location 1,3 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  List(FieldItem(Coordinate(1,4),false,1), FieldItem(Coordinate(1,2),false,1), FieldItem(Coordinate(1,1),false,0), FieldItem(Coordinate(1,3),true,0)) was not equal to "01*1" (MinefieldSpec.scala:266)[0m[0m
+[0m[[0minfo[0m] [0m[31m- should increment fieldItems for two rows *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  List(FieldItem(Coordinate(2,4),false,1), FieldItem(Coordinate(2,2),false,1), FieldItem(Coordinate(1,4),false,1), FieldItem(Coordinate(1,2),false,1), FieldItem(Coordinate(1,1),false,0), FieldItem(Coordinate(1,3),true,0), FieldItem(Coordinate(2,1),false,0), FieldItem(Coordinate(2,3),true,0)) was not equal to "01*1" (MinefieldSpec.scala:278)[0m[0m

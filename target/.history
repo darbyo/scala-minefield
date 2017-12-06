@@ -1,0 +1,31 @@
+test
+exit
+test
+exit
+test
+test-only "return with isBomb true when * is entered as second element"
+test-only -- -z "return with isBomb true when * is entered as second element"
+test
+exit
+test
+exit
+test
+exit
+test
+ exit
+test
+test-only controllers.MinefieldSpec -- -z "do this"
+test
+test-only controllers.MinefieldSpec -- -z "do this"
+test
+exit
+test
+exit
+test
+test-only controllers.MinefieldSpec -- -z "increment fieldItens for one row"
+test-only controllers.MinefieldSpec -- -z "increment fieldItens for one rowz"
+exit
+test
+exit
+test
+exit
